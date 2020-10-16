@@ -1,0 +1,32 @@
+<header>
+<description>
+This template generates a type declaration for DFS-Solutions asset variables.
+</description>
+<variables>
+<variable>
+TIME<br>The time the file was generated.
+</variable>
+<variable>
+TYPE<br>The type that is saved in the asset variable.<br>^([A-Za-z_][A-Za-z0-9_]*)(?:\\.([A-Za-z_][A-Za-z0-9_]*))*$
+</variable>
+<variable>
+TYPENAME<br>A clear name for the specified type, ex. "int" to "Integer".<br>^([A-Za-z_][A-Za-z0-9_]*)$
+</variable>
+<variable>
+NAMESPACE<br>The namespace in which the generated class is going to subside.<br>^([A-Za-z_][A-Za-z0-9_]*)(?:\\.([A-Za-z_][A-Za-z0-9_]*))*$
+</variable>
+</variables>
+<dependencies>
+<br>
+</dependencies>
+</header>
+// DFS Solutions - Asset Variables
+// Generated: $TIME$
+using UnityEngine;
+using DFSSolutions.AssetVariables;
+
+namespace $NAMESPACE$
+{
+    [CreateAssetMenu(fileName = "New $TYPENAME$", menuName = "DFS Solutions/Asset Variables/$TYPENAME$")]
+    public class $TYPENAME$Variable : AssetVariable<$TYPE$> { }
+}

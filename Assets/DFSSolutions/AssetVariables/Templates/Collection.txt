@@ -1,0 +1,10 @@
+// DFS Solutions - Asset Variables
+// Generated: $TIME$
+using UnityEngine;
+using DFSSolutions.AssetVariables;
+
+namespace $NAMESPACE$
+{
+    [CreateAssetMenu(fileName = "New $TYPENAME$ Collection", menuName = "DFS Solutions/Asset Variables/Collections/$TYPENAME$")]
+    public class $TYPENAME$Collection : AssetTypeCollection<$TYPE$> { }
+}
